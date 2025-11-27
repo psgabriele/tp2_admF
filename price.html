@@ -17,7 +17,30 @@
     </ul>
     </div>
     <div class="conteudo">
+        <header>
+            <h1>Tabela Price</h1>
+        </header>
+        <main>
+        <section class="simulator">
+            <form id="price-form">
+                <label for="amount">Valor do Empréstimo (R$):</label>
+                <input type="number" id="amount" name="amount" required>
 
+                <label for="interest-rate">Taxa de Juros Mensal (%):</label>
+                <input type="number" id="interest-rate" name="interest-rate" step="0.01" required>
+
+                <label for="term">Parcelas:</label>
+                <input type="number" id="term" name="term" required>
+
+                <button type="submit">Calcular Price</button>
+            </form>
+
+            <div id="price-result" class="result">
+                <h2>Resultado Price:</h2>
+                <div id="price-amortization-schedule">
+                    
+                </div>
+            </div>
     </div>
 </body>
 </html>
