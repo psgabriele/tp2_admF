@@ -1,4 +1,7 @@
 function simularSAC() {
+    // O SAC (Sistema de Amortização Constante) é calculado abaixo com base na fórmula
+    // Amortização = Valor Total do Financiamento / Número de Parcelas
+
     const valor = Number(document.getElementById("valor").value);
     const juros = Number(document.getElementById("juros").value) / 100;
     const n = Number(document.getElementById("parcelas").value);
@@ -50,6 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function calcularPrice() {
+    // Os valores da Tabela Price são calculados com base na fórmula 
+    // P = (PV * i) / [1–(1+i)^ -n}, onde:
+    // P é o valor da parcela, PV é o valor presente (valor principal), 
+    // i é a taxa de juros (em decimal) e n é o número de parcelas
+
     const valor = Number(document.getElementById("amount").value);
     const jurosPercent = Number(document.getElementById("interest-rate").value);
     const n = Number(document.getElementById("term").value);
